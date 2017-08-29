@@ -30,6 +30,7 @@ namespace Module02_HelloWorld
             for (int x = 0; x < 3; x++)
             {
                 u += x;
+                 
             }
 
             Test1(5);
