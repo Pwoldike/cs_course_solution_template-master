@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CABD0D0C-95AD-449D-8570-C7C68B4F9B2C}</ProjectGuid>
+    <ProjectGuid>{7FE92BCF-E27D-437D-9BB4-A8A912EF938F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Hello_World</RootNamespace>
-    <AssemblyName>Hello World</AssemblyName>
+    <RootNamespace>Variabler</RootNamespace>
+    <AssemblyName>Variabler</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

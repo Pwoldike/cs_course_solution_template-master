@@ -5,16 +5,10 @@
         static void Main(string[] args)
         {
 
-            System.Int32 i;
-            System.Decimal komma;
+            
+            
 
-            int ii;
-            decimal kommaa;
-            double d;
-            long l;
-            short s;
-
-            i = 212121212;
+            
 
             
 
