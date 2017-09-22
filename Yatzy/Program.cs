@@ -10,6 +10,7 @@ namespace Yatzy
     {
         static void Main(string[] args)
         {
+            
 
             Person u = new Person("Lars","Pedersen", 1965);
 

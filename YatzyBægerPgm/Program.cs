@@ -4,27 +4,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Opgave3
+namespace YatzyBægerPgm
 {
     class Program
     {
-        
         static void Main(string[] args)
         {
-
-            Terning t = new Terning();
-            t.Skriv();
-            t.Ryst();
-            t.Skriv();
-            t.Værdi = 7;
-            t.Skriv();
-            t = new Terning(6);
-            t.Skriv();
-
-
-           
-            
+            Console.WriteLine();
         }
+    }
+
+    public class YatzyBæger
+    {
+        private Terning[] terninger;    //privat array
+
+        public YatzyBæger()
+        {
+            terninger = new Terning[5];
+            for (int i = 0; i < 5; i++)
+            {
+                terninger[i] = new Terning();
+            }
+
+        }
+
+        public void Ryst()
+        {
+
+        }
+
     }
 
     public class Terning
@@ -45,7 +53,7 @@ namespace Opgave3
                 if (value < 0 || value > 6)
                 {
                     value = 1;
-                   
+
                 }
                 Console.WriteLine("Terning tildeles værdi " + value);
                 this.værdi = value;
@@ -53,7 +61,7 @@ namespace Opgave3
             }
         }
 
-        public void Ryst()
+        public void Ryst()    //void betyder at der ikke resturneres vædier
         {
             this.Værdi = rnd.Next(1, 7);
         }
@@ -64,7 +72,7 @@ namespace Opgave3
             this.Ryst();
         }
 
-        public void Skriv()
+        public void Skriv()     //void - ingen værdier retur
         {
             Console.WriteLine("[" + this.Værdi + "]");
             Console.ReadKey();
@@ -80,16 +88,5 @@ namespace Opgave3
         {
             rnd = new Random();
         }
-
-
-
-
-
-        
-
-    }
-    public class YatzyBæger
-    {
-
     }
 }

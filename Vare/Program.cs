@@ -13,6 +13,8 @@ namespace Vare
         static void Main(string[] args)
         {
             Vare v = new Vare();
+            Console.WriteLine(v.PrisMedMoms());
+
             v.Navn = "Vare nr. 1";
             v.Pris = 100.25;
 
@@ -35,9 +37,10 @@ namespace Vare
     }
     public class Vare
     {
-        public Vare() 
+        public Vare()  //default constructor
         {
-            
+            this.Navn = "";
+            this.pris = 100;
         }
         public Vare(string navn, double pris)
         {
